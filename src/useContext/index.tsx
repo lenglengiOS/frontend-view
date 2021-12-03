@@ -4,7 +4,7 @@ const CountContext = createContext(0);
 const Example = () => {
   const [count, setCount] = useState<number>(0);
   return (
-    <div>
+    <div style={{ textAlign: "center", marginTop: 50 }}>
       <p>父组件点击数量：{count}</p>
       <button onClick={() => setCount(count + 1)}>{"点击+1"}</button>
       <CountContext.Provider value={count}>
